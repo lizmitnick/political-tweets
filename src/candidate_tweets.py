@@ -119,10 +119,7 @@ def tweets_to_csv(since_date='2020-01-01',
 
 
 def main():
-
-    tweets_to_csv(since_date='2019-06-01',
-                  keywords={"Education":["Education"]},
-                  twitter_handles=['amyklobuchar', 'BernieSanders'])
+    tweets_to_csv()
 
 
 
