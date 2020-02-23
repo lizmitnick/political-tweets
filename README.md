@@ -4,7 +4,13 @@ Data can then be analyzed for various trends and/or utilized for model training.
 
 
 ## Setup
+
 From wherever you want to install the directory and run the program:
+
+EITHER: run `src/setup.sh`
+
+OR follow the instructions below. They do the same thing. Choose your own adventure.
+
 1. Highly recommend using virtual environments to keep individual projects contained. Use `virtualenv --python=/usr/local/bin/python3 venv` to create virtual environment 'venv'.
 2. Activate virtual environment with `source venv/bin/activate` (`deactivate` to exit).
 3. Run `git clone https://github.com/jonbakerfish/TweetScraper.git`.
