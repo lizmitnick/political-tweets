@@ -1,5 +1,6 @@
 # political-tweets
-Scrapes political tweets on key topics for presidential hopefuls using TweetScraper (https://github.com/jonbakerfish/TweetScraper.git)
+Scrapes political tweets on key topics for presidential hopefuls using TweetScraper (https://github.com/jonbakerfish/TweetScraper.git) and exports to CSV with fields 'usernameTweet', 'ID', 'text', 'datetime'.
+Data can then be analyzed for various trends and/or utilized for model training.
 
 
 ## Setup
@@ -10,25 +11,28 @@ From wherever you want to install the directory and run the program:
 4. `cd TweetScraper` to move into TweetScraper directory.
 5. Create '.env' file with `touch .env`.
 6. Run the following commands to install requirements and save to requirements file.
-`touch requirements.txt`
-`pip install pandas numpy datetime python-dotenv simplejson scrapy pymongo mysql-connector configparser`
-`pip freeze > requirements.txt`
+- `touch requirements.txt`
+- `pip install pandas numpy datetime python-dotenv simplejson scrapy pymongo mysql-connector configparser`
+- `pip freeze > requirements.txt`
 7. Run the following commands to create necessary subfolders in TweetScraper and move files from `political-tweets` repository to appropriate locations.
-`mkdir src`
-`mkdir inputs`
-`cd ..`
-`cp src/candidate_tweets.py ./TweetScraper/src`
-`cp inputs/issues_terms.json ./TweetScraper/inputs`
+- `mkdir src`
+- `mkdir inputs`
+- `cd ..`
+- `cp src/candidate_tweets.py ./TweetScraper/src`
+- `cp inputs/issues_terms.json ./TweetScraper/inputs`
 
 
 ## Running the scraper
+
+### How to run:
 From the `TweetScraper` directory, run `candidate_tweets.py` with command `./src/candidate_tweets.py`
 
+### What it's doing:
 `candidate_tweets.py` scrapes tweets from Twitter handles given specific keywords since a given date.
 Uses TweetScraper (`https://github.com/jonbakerfish/TweetScraper`).
 Exports as CSV to `TweetScraper/Results` subfolder with fields `'usernameTweet', 'ID', 'text', 'datetime'`.
 
-### More details on running the scraper
+### More details:
 `keywords` must be dictionary with format {"MainTopic":[<list of subtopics as strings>]}
 `twitter_handles` must be list of Twitter accounts as strings
 
