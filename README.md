@@ -45,5 +45,5 @@ If unspecified, twitter_handles will include: `['SenatorBennet','JoeBiden',
 
 If unspecified, keywords will include all words in `issues_terms.json`.
 
-The more handles, keywords, and the farther back tweets are pulled, the less complete the pull will bed.
+The more handles, keywords, and the farther back tweets are pulled, the less complete the pull will be.
 It is recommended to run only a few keywords and only a few handles at a time to get the most complete return.
