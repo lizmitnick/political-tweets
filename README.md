@@ -33,8 +33,8 @@ Uses TweetScraper (`https://github.com/jonbakerfish/TweetScraper`).
 Exports as CSV to `TweetScraper/Results` subfolder with fields `'usernameTweet', 'ID', 'text', 'datetime'`.
 
 ### More details:
-`keywords` must be dictionary with format {"MainTopic":[list of subtopics as strings]}
-`twitter_handles` must be list of Twitter accounts as strings
+- `keywords` must be dictionary with format {"MainTopic":[list of subtopics as strings]}
+- `twitter_handles` must be list of Twitter accounts as strings
 
 Pulls tweets since Jan 01, 2020, unless otherwise specified as 'YYYY-MM-DD'.
 
